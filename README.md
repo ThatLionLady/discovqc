@@ -91,8 +91,7 @@ The **paramfile** is a text file with 11 lines of arguments:
     1. sample size
     2. out directory
     3. file name
-<br>
-<br>
+
 - *DisCovQC_grid.sh*: use DistributedCoverage-wBashArgList-Grid.R in paramfile
     > Only "works" (i.e. looks good) for less than about 20 samples! Moreso here because the script does work and could be used to help develope something else in the future.
 
