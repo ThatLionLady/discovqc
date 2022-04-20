@@ -1,0 +1,11 @@
+### Delete this Line: paramfile should be 10 lines containing:
+1. SAMPLES = Path to list of sample names (i.e. /Lists/samplelist.txt)
+2. BAMDIR = Path to BAMs (i.e. /BAMs/)
+3. BAM = BAMs file name (i.e. .mapped.sorted)
+4. OUT = Path to out directory (i.e. /DisCov/)
+5. CHROM = Chromosome to restrict depth calculation (i.e. Mitogenome)
+6. BINS = Bin width (i.e. 100)
+7. PROG = Path to script directory (i.e. /Scripts/)
+8. CUT = Cutoff value for minimum read depth (i.e. 10)
+9. COLS = Number of columns for grid output (i.e. 4)
+10.THREADS = Number of threads (i.e. 16)
