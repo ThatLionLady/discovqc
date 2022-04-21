@@ -33,7 +33,7 @@ git clone https://github.com/ThatLionLady/discovqc
 ```
 Make main script executable:
 ```sh
-chmod u+x DisCovQC.sh
+chmod u+x Scripts/DisCovQC.sh
 ```
 
 # Usage
