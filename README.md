@@ -80,7 +80,7 @@ The **paramfile** is a text file with 11 lines of arguments:
 
 ## **Main Scripts**
 - *DisCovQC.sh*
-- *DistributedCoverage-wBashArgList.R*
+- *DistributedCoverage-wBashArg.R*
 
 ## **Other Scripts**
 - *DisCovQC_makeHTML.sh*: post Rscript for making the HTML file of plots (can be ANY plots!)
@@ -100,7 +100,7 @@ The **paramfile** is a text file with 11 lines of arguments:
 
 - *DistributedCoverage-Individual.R*: Can be opened in rstudio to manually make plots for an individual sample. 
 
-- *DistributedCoverage-wBashArgList-Grid.R*: Rscript with bash arguments for use with *DisCovQC_grid.sh* for making a grid plot from a list.
+- *DistributedCoverage-wBashArg-Grid.R*: Rscript with bash arguments for use with *DisCovQC_grid.sh* for making a grid plot from a list.
 
 # Example Output
 
