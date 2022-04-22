@@ -31,12 +31,6 @@ Download all files:
 ```sh
 git clone https://github.com/ThatLionLady/discovqc
 ```
-Make main script executable:
-```sh
-cd discovqc
-chmod u+x Scripts/DisCovQC.sh
-```
-
 # Usage
 
 It's relatively quick to run: 500 samples took 25 minutes.
@@ -44,13 +38,13 @@ It's relatively quick to run: 500 samples took 25 minutes.
 To run with the paramfile:
 
 ```sh
-./DisCovQC.sh $(cat paramfile)
+bash DisCovQC.sh $(cat paramfile)
 ```
 
 Run in the background with a progress log:
 
 ```sh
-screen -S discovqc -dm ./DisCovQC.sh $(cat paramfile) &> DisCovQC.log
+screen -S discovqc -dm bash DisCovQC.sh $(cat paramfile) &> DisCovQC.log
 ```
 
 View output
