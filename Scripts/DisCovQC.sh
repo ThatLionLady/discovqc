@@ -13,10 +13,11 @@ THREADS=${10}
 
 echo "Welcome to DisCovQC!"
 echo 
-echo "Starting mosdepth..."
 
 mkdir ${OUT}Data
 cd ${OUT}Data
+
+echo "Starting mosdepth..."
 
 # generate data and plots
 
