@@ -98,10 +98,12 @@ The **paramfile** is a text file with 11 lines of arguments:
 
 # Example Output
 
-Here is a screenshot of some example output of:
+Here are screenshots of some example output of:
 - Sample size = 12
 - Bin size = 200
 - Cutoff value = 5
 - Columns = 5
 
-![example output](image.png)
+![example DisCovPlot output](images/DisCovPlot.All.screenshot.jpg)
+
+![example DisCovPlotComp output](images/DisCovPlotComp.All.screenshot.jpg)
