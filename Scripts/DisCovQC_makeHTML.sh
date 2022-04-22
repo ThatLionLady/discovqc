@@ -22,18 +22,21 @@ echo '<style>' >> ${OUT}${FILE}.All.html
 echo 'h2 {text-align: center;}' >> ${OUT}${FILE}.All.html
 echo 'h3 {text-align: center;}' >> ${OUT}${FILE}.All.html
 echo 'h4 {text-align: center;}' >> ${OUT}${FILE}.All.html
+echo '.adjust-line-height {line-height: 25%;}' >> ${OUT}${FILE}.All.html
 echo '</style>' >> ${OUT}${FILE}.All.html
 echo '' >> ${OUT}${FILE}.All.html
-echo '<h2>Distributed Coverage</h2>' >> ${OUT}${FILE}.All.html
-echo '<h4><i>DisCovQC Output</i></h4>' >> ${OUT}${FILE}.All.html
+echo '<div class="adjust-line-height">' >> ${OUT}${FILE}.All.html
+echo '<h2>Distribution of Coverage for Quality Contol</h2>' >> ${OUT}${FILE}.All.html
+echo '<h4><i>Individual Plots DisCovQC Output</i></h4>' >> ${OUT}${FILE}.All.html
 echo "<h3><b>N=${N}</b></h3>" >> ${OUT}${FILE}.All.html
+echo '</div>' >> ${OUT}${FILE}.All.html
 echo '<table>' >> ${OUT}${FILE}.All.html
 echo '<tbody>' >> ${OUT}${FILE}.All.html
 echo '<tr>' >> ${OUT}${FILE}.All.html
 
 # add grids
 
-declare -a Issues=( ${FILE}.*.png );
+declare -a Issues=( DisCovPlot.*.png );
 
 for((n=0;n<${#Issues[@]};n++)); do
         if (( $(($n % $COLS )) == $(($COLS-1)) )); 

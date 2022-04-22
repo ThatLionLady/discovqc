@@ -54,11 +54,14 @@ echo '<style>' >> ${OUT}DisCovPlotComp.All.html
 echo 'h2 {text-align: center;}' >> ${OUT}DisCovPlotComp.All.html
 echo 'h3 {text-align: center;}' >> ${OUT}DisCovPlotComp.All.html
 echo 'h4 {text-align: center;}' >> ${OUT}DisCovPlotComp.All.html
+echo '.adjust-line-height {line-height: 25%;}' >> ${OUT}DisCovPlotComp.All.html
 echo '</style>' >> ${OUT}DisCovPlotComp.All.html
 echo '' >> ${OUT}DisCovPlotComp.All.html
-echo '<h2>Distributed Coverage</h2>' >> ${OUT}DisCovPlotComp.All.html
-echo '<h4><i>DisCovQC Output</i></h4>' >> ${OUT}DisCovPlotComp.All.html
+echo '<div class="adjust-line-height">' >> ${OUT}DisCovPlotComp.All.html
+echo '<h2>Distribution of Coverage for Quality Contol</h2>' >> ${OUT}DisCovPlotComp.All.html
+echo '<h4><i>Comparative Plots DisCovQC Output</i></h4>' >> ${OUT}DisCovPlotComp.All.html
 echo "<h3><b>N=${N}</b></h3>" >> ${OUT}DisCovPlotComp.All.html
+echo '</div>' >> ${OUT}DisCovPlotComp.All.html
 echo '<img src="DisCovPlotComp.All.png" width=100% height=auto>' >> ${OUT}DisCovPlotComp.All.html
 echo '' >> ${OUT}DisCovPlotComp.All.html
 echo '</body>' >> ${OUT}DisCovPlotComp.All.html
@@ -72,11 +75,14 @@ echo '<style>' >> ${OUT}DisCovPlot.All.html
 echo 'h2 {text-align: center;}' >> ${OUT}DisCovPlot.All.html
 echo 'h3 {text-align: center;}' >> ${OUT}DisCovPlot.All.html
 echo 'h4 {text-align: center;}' >> ${OUT}DisCovPlot.All.html
+echo '.adjust-line-height {line-height: 25%;}' >> ${OUT}DisCovPlot.All.html
 echo '</style>' >> ${OUT}DisCovPlot.All.html
 echo '' >> ${OUT}DisCovPlot.All.html
-echo '<h2>Distributed Coverage</h2>' >> ${OUT}DisCovPlot.All.html
-echo '<h4><i>DisCovQC Output</i></h4>' >> ${OUT}DisCovPlot.All.html
+echo '<div class="adjust-line-height">' >> ${OUT}DisCovPlot.All.html
+echo '<h2>Distribution of Coverage for Quality Contol</h2>' >> ${OUT}DisCovPlot.All.html
+echo '<h4><i>Individual Plots DisCovQC Output</i></h4>' >> ${OUT}DisCovPlot.All.html
 echo "<h3><b>N=${N}</b></h3>" >> ${OUT}DisCovPlot.All.html
+echo '</div>' >> ${OUT}DisCovPlot.All.html
 echo '<img src="DisCovPlot.All.png" width=100% height=auto>' >> ${OUT}DisCovPlot.All.html
 echo '' >> ${OUT}DisCovPlot.All.html
 echo '</body>' >> ${OUT}DisCovPlot.All.html
