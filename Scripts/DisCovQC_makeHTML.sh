@@ -26,7 +26,7 @@ echo '.adjust-line-height {line-height: 25%;}' >> ${OUT}${FILE}.All.html
 echo '</style>' >> ${OUT}${FILE}.All.html
 echo '' >> ${OUT}${FILE}.All.html
 echo '<div class="adjust-line-height">' >> ${OUT}${FILE}.All.html
-echo '<h2>Distribution of Coverage for Quality Contol</h2>' >> ${OUT}${FILE}.All.html
+echo '<h2>Distribution of Coverage for Quality Control</h2>' >> ${OUT}${FILE}.All.html
 echo '<h4><i>Individual Plots DisCovQC Output</i></h4>' >> ${OUT}${FILE}.All.html
 echo "<h3><b>N=${N}</b></h3>" >> ${OUT}${FILE}.All.html
 echo '</div>' >> ${OUT}${FILE}.All.html

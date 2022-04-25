@@ -11,11 +11,9 @@ list=read.table(args[1], header = FALSE)
 list=as.character(list[,1])
 bins=c(args[2])
 bins=as.numeric(bins)
-maxd=c(args[3])
-maxd=as.numeric(maxd)
-cut=c(args[4])
-cut=as.numeric(maxd)
-columns=c(args[5])
+cut=c(args[3])
+cut=as.numeric(cut)
+columns=c(args[4])
 columns=as.numeric(columns)
 
 #create plot lists
@@ -29,6 +27,25 @@ library(mdthemes, lib.loc = library.path)
 library(htmlwidgets, lib.loc = library.path)
 library(plotly, lib.loc = library.path)
 library(gridExtra, lib.loc = library.path)
+
+#find number of rows and make a blank dataframe
+sample=list[[1]][1]
+bed <- read.table(paste(c('',sample,'.regions.bed.gz'),collapse=''),header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
+bed <- as.data.frame(bed)
+dfrows=nrow(bed)
+df <- data.frame(matrix(ncol = 0, nrow = dfrows))
+
+#create a dataframe of read depths
+for (sample in list) {
+  bed <- read.table(paste(c('',sample,'.regions.bed.gz'),collapse=''),header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
+  bed <- as.data.frame(bed)
+  df <- cbind(df, sample = bed$V4)
+}
+
+#find max read depth and round to nearest 10
+maxd=max(df)
+maxd=plyr::round_any(maxd, 10, f = ceiling)
+
 
 #create individual plots
 for (sample in list) {

@@ -11,9 +11,9 @@ list=read.table(args[1], header = FALSE)
 list=as.character(list[,1])
 bins=c(args[2])
 bins=as.numeric(bins)
-cut=c(args[4])
+cut=c(args[3])
 cut=as.numeric(cut)
-columns=c(args[5])
+columns=c(args[4])
 columns=as.numeric(columns)
 
 #required packages
