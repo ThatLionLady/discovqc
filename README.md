@@ -12,7 +12,7 @@ The max depth for the comparative plots is determined by finding the max depth a
 
 All plots are created with ggplot2 and saved as PNGs and interactive plotly HTML files. These individual plots are then strung together into a grid. 
 
-**TIP:** *Images are embedded into the HTML file via absolute path so moving the image files will render the HTML file useless. HTML files can be moved. Or just keep everything as it. Don't worry. The output is organized and easy to maneuver.*
+**TIP:** *Images are embedded into the HTML file via absolute path so moving the image files will render the HTML file useless. HTML files can be moved. Or just keep everything as is. Don't worry. The output is organized and easy to maneuver.*
 
 # "Installation"
 
